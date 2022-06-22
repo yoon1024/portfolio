@@ -1,5 +1,60 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;900&family=Karla:wght@200&display=swap');
 
 *{margin: 0px; padding: 0px; box-sizing: border-box;}
 ul,ol,li{list-style: none;}
-a{text-decoration: none;}
+a {text-decoration: none;}
+
+
+// header 영역
+#header{
+    width: 100%; height: 100vh; position: relative;
+    video{
+        width: 100%; height: 100%; object-fit: cover; z-index: -1;
+    }
+    .inner{
+        width: 1180px; height: 100%; 
+        position: absolute; top: 50%; left:50%; transform: translate(-50%,-50%);
+        .wrap{
+            position: absolute; top: 70px; left: 0;
+            a{
+                img{
+                    width: 9vw; opacity: 0.8;
+                }
+            }
+        }
+        .menuWeb{
+            // border-bottom: 1px solid #efefef;
+            #gnb{
+                position: absolute; top: 80px; right: 0;
+                // border: 1px solid #efefef;
+                li{
+                    float: left;
+                    a{
+                        display: block; padding: 14px 40px;
+                        font: 20px/1 'Karla'; color: #efefef;
+                    }
+                }
+            }
+        }
+
+        .util{
+            opacity: 0;
+            //어디에 배치할지,
+        }
+
+        .copy{
+            position: absolute; top: 50%; 
+            text-align: center;
+
+            h1{
+                font: bold 50px/1 'Frank Ruhl Libre'; color: #efefef; opacity: 0.9;
+            }
+            p{
+                font: 18px/1.4 'Karla'; color: #efefef;
+            }
+        }
+
+
+    }
+}
