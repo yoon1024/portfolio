@@ -77,9 +77,12 @@ a {
 }
 
 #intro {
+  width: 100%;
+  padding: 100px 0px;
+}
+#intro .inner {
   width: 1180px;
   margin: 0 auto;
-  padding-top: 100px;
 }
 #intro .inner > h2 {
   padding-left: 40px;
@@ -174,6 +177,66 @@ a {
   content: "";
   display: block;
   clear: both;
+}
+
+#product {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: rgb(220, 229, 238);
+}
+#product .inner {
+  width: 1180px;
+  margin: 0 auto;
+  text-align: center;
+}
+#product .inner h3 {
+  font-size: 17px;
+  font-family: "Frank Ruhl Libre";
+  font-weight: 900;
+  line-height: 1;
+  color: #555;
+}
+#product .inner h2 {
+  font-size: 40px;
+  font-family: "Frank Ruhl Libre";
+  font-weight: 900;
+  color: #333;
+}
+#product .inner p {
+  font-size: 20px;
+  font-family: "Karla";
+  line-height: 4;
+  color: #555;
+}
+#product .inner .wrap {
+  display: flex;
+  margin-top: 50px;
+}
+#product .inner .wrap article {
+  margin-right: 20px;
+}
+#product .inner .wrap article img {
+  background-color: rgb(230, 230, 230);
+  width: 380px;
+  height: 380px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+#product .inner .wrap article h3 {
+  font-size: 20px;
+  font-family: "Frank Ruhl Libre";
+  font-weight: 900;
+  color: #555;
+}
+#product .inner .wrap article p {
+  font-size: 20px;
+  font-family: "Karla";
+  line-height: 3;
+  color: #333;
+}
+#product .inner .wrap article:last-child {
+  margin-right: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
