@@ -216,7 +216,8 @@ a {text-decoration: none;}
 #brand{
     width: 100%; padding: 150px 0px;
     .inner{
-        width: 1180px; margin: 0 auto; text-align: center;
+        width: 1180px; margin: 0 auto; 
+        text-align: center;
         h3{
             font-size: 20px;
             font-family: 'Frank Ruhl Libre';
@@ -238,11 +239,35 @@ a {text-decoration: none;}
             color: #000;
         }
         .wrap{ 
-            width: 100%; margin-top: 100px;
-            article{
-                img{
-                    width: 950px;
+            position: relative;
+            width: 950px; height: 500px; margin: 100px auto 0px; 
+            overflow: hidden;
+            .panel{
+                width: 300%; height: 100%;
+                transition: 1s;
+                li{ 
+                    width: calc( 100% / 3 ); height: 100%;
+                    float: left;
 
+                    &:nth-of-type(1){background: url(../img/brand_story1.jpg);background-size: cover;}
+                    &:nth-of-type(2){background: url(../img/brand_story2.jpg);background-size: cover;}
+                    &:nth-of-type(3){background: url(../img/brand_story3.png);background-size: cover;}
+                }
+            }
+            .btns{
+                position: absolute; bottom: 15px; right: 20px;
+                li{
+                    float: left; margin: 20px;
+                    a{
+                        display: block;
+                        width: 20px; height: 20px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        opacity: 0.7;
+                    }
+                    &.on a{
+                        background-color: #000;
+                    }
                 }
             }
         }
