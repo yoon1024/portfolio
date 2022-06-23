@@ -12,10 +12,9 @@ btns.forEach((el,index)=>{
 
         panel.style.marginLeft = -100 * [index] + "%";
     
-        for(let btn of btns){
-            btn.classList.remove("on");
+        btns.forEach((el)=>{
+        el.classList.remove("on");})
 
-        }
         el.classList.add("on");
 
     })
