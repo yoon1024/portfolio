@@ -98,6 +98,95 @@ a {
   line-height: 1.4;
   color: #efefef;
 }
+#header .inner .btnCall {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5%;
+  right: 0px;
+  display: none;
+}
+#header .inner .btnCall::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: rgb(171, 188, 207);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#header .inner .btnCall::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: rgb(171, 188, 207);
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+}
+#header .inner .btnCall span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: rgb(171, 188, 207);
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  margin-top: -1px;
+  text-indent: -99999px;
+}
+#header .inner .btnCall .on::before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+#header .inner .btnCall .on::after {
+  bottom: 50%;
+  transform: rotate(-45deg);
+}
+#header .inner .btnCall .on span {
+  transform: translateX(100%);
+}
+#header .inner .menuMo {
+  width: 300px;
+  height: 100vh;
+  background-color: rgb(171, 188, 207);
+  position: fixed;
+  top: 0px;
+  left: -700px;
+  z-index: 20;
+}
+#header .inner .menuMo.on {
+  left: 0px;
+}
+#header .inner .menuMo h1 {
+  padding-top: 50px;
+  padding-left: 10px;
+  border-bottom: 3px solid #efefef;
+  width: 100%;
+  text-align: center;
+}
+#header .inner .menuMo h1 a img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+#header .inner .menuMo #gnbMo {
+  margin-top: 30px;
+}
+#header .inner .menuMo #gnbMo li {
+  margin-bottom: 10px;
+}
+#header .inner .menuMo #gnbMo li a {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid #fff;
+  font-size: 20px;
+  font-family: "Karla";
+  color: #fff;
+  text-align: center;
+}
 
 #intro {
   width: 100%;

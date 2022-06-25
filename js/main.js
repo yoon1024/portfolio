@@ -1,3 +1,7 @@
+const header = document.querySelector("#header");
+const bntCall = header.querySelector(".btnCall")
+
+
 const brand = document.querySelector("#brand");
 const panel = brand.querySelector(".panel");
 // const panel_li = brand.querySelector(".panel li");
