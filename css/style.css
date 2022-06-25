@@ -87,6 +87,12 @@ a {
   top: 50%;
   text-align: center;
 }
+#header .inner .copy.on {
+  padding-left: 300px;
+}
+#header .inner .copy.on h1 {
+  font-size: 40px;
+}
 #header .inner .copy h1 {
   font-size: 50px;
   font-family: "Frank Ruhl Libre";
@@ -118,6 +124,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  transition: 0.5s;
 }
 #header .inner .btnCall::after {
   content: "";
@@ -128,6 +135,7 @@ a {
   position: absolute;
   bottom: 0;
   left: 0px;
+  transition: 0.5s;
 }
 #header .inner .btnCall span {
   display: block;
@@ -144,11 +152,13 @@ a {
   top: 50%;
   transform: rotate(45deg);
   margin-top: -1px;
+  transition: 0.5s;
 }
 #header .inner .btnCall.on::after {
   bottom: 50%;
   transform: rotate(-45deg);
   margin-bottom: -1px;
+  transition: 0.5s;
 }
 #header .inner .btnCall.on span {
   display: none;
@@ -434,11 +444,13 @@ a {
   width: 100%;
   padding: 100px 0px;
   background-color: rgb(220, 229, 238);
+  position: relative;
 }
 #product .inner {
   width: 1180px;
   margin: 0 auto;
   text-align: center;
+  overflow: hidden;
 }
 #product .inner h3 {
   font-size: 17px;
@@ -462,9 +474,11 @@ a {
 #product .inner .wrap {
   display: flex;
   margin-top: 50px;
+  width: 200%;
 }
 #product .inner .wrap article {
   margin-right: 20px;
+  width: 33.3333333333%;
 }
 #product .inner .wrap article img {
   background-color: rgb(230, 230, 230);
@@ -488,6 +502,16 @@ a {
 }
 #product .inner .wrap article:last-child {
   margin-right: 0px;
+}
+#product .inner .prev {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+}
+#product .inner .next {
+  position: absolute;
+  top: 50%;
+  right: 100px;
 }
 
 #brand {
@@ -688,6 +712,25 @@ a {
   }
   #header .inner .menuWeb {
     display: none;
+  }
+  #header .inner .copy {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+  }
+  #header .inner .copy h1 {
+    font-size: 50px;
+    font-family: "Frank Ruhl Libre";
+    font-weight: 900;
+    line-height: 1;
+    color: #efefef;
+    opacity: 0.9;
+  }
+  #header .inner .copy p {
+    font-size: 18px;
+    font-family: "Karla";
+    line-height: 1.4;
+    color: #efefef;
   }
   #header .inner .btnCall {
     display: block;
