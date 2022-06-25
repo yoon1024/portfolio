@@ -1,6 +1,7 @@
 const header = document.querySelector("#header");
 const btnCall = header.querySelector(".btnCall");
 const menuMo = header.querySelector(".menuMo");
+const logo = header.querySelector(".inner .wrap")
 
 
 const brand = document.querySelector("#brand");
@@ -17,6 +18,7 @@ btnCall.addEventListener("click",(e)=>{
 
     btnCall.classList.toggle("on");
     menuMo.classList.toggle("on");
+    logo.classList.toggle("on");
 
 })
 
