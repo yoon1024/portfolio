@@ -1,5 +1,6 @@
 const header = document.querySelector("#header");
-const bntCall = header.querySelector(".btnCall")
+const btnCall = header.querySelector(".btnCall");
+const menuMo = header.querySelector(".menuMo");
 
 
 const brand = document.querySelector("#brand");
@@ -9,7 +10,19 @@ const btns = brand.querySelectorAll(".wrap .btns li");
 
 
 
+// 헤더 모바일 메뉴, 햄버거 버튼
 
+btnCall.addEventListener("click",(e)=>{
+    e.preventDefault();
+
+    btnCall.classList.toggle("on");
+    menuMo.classList.toggle("on");
+
+})
+
+
+
+// brand_slide
 btns.forEach((el,index)=>{
     el.addEventListener("click",(e)=>{
         e.preventDefault();

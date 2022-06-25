@@ -104,7 +104,6 @@ a {
   position: absolute;
   top: 5%;
   right: 0px;
-  display: none;
 }
 #header .inner .btnCall::before {
   content: "";
@@ -137,16 +136,18 @@ a {
   margin-top: -1px;
   text-indent: -99999px;
 }
-#header .inner .btnCall .on::before {
+#header .inner .btnCall.on::before {
   top: 50%;
   transform: rotate(45deg);
+  margin-top: -1px;
 }
-#header .inner .btnCall .on::after {
+#header .inner .btnCall.on::after {
   bottom: 50%;
   transform: rotate(-45deg);
+  margin-bottom: -1px;
 }
-#header .inner .btnCall .on span {
-  transform: translateX(100%);
+#header .inner .btnCall.on span {
+  display: none;
 }
 #header .inner .menuMo {
   width: 300px;
@@ -156,6 +157,7 @@ a {
   top: 0px;
   left: -700px;
   z-index: 20;
+  transition: 0.5s;
 }
 #header .inner .menuMo.on {
   left: 0px;
@@ -171,21 +173,19 @@ a {
   width: 100px;
   margin-bottom: 10px;
 }
-#header .inner .menuMo #gnbMo {
-  margin-top: 30px;
-}
-#header .inner .menuMo #gnbMo li {
-  margin-bottom: 10px;
-}
 #header .inner .menuMo #gnbMo li a {
   display: block;
   width: 100%;
-  padding: 20px;
+  padding: 30px;
   border-bottom: 1px solid #fff;
   font-size: 20px;
+  font-weight: bold;
   font-family: "Karla";
   color: #fff;
   text-align: center;
+}
+#header .inner .menuMo #gnbMo li a:hover {
+  background: #999;
 }
 
 #intro {
