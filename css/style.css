@@ -442,15 +442,20 @@ a {
 
 #product {
   width: 100%;
+  height: 100vh;
   padding: 100px 0px;
   background-color: rgb(220, 229, 238);
   position: relative;
+  margin: auto;
+  overflow: hidden;
 }
 #product .inner {
   width: 1180px;
+  height: 100%;
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
+  position: relative;
 }
 #product .inner h3 {
   font-size: 17px;
@@ -475,10 +480,14 @@ a {
   display: flex;
   margin-top: 50px;
   width: 200%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
 }
 #product .inner .wrap article {
+  width: 380px;
   margin-right: 20px;
-  width: 33.3333333333%;
 }
 #product .inner .wrap article img {
   background-color: rgb(230, 230, 230);
@@ -500,18 +509,15 @@ a {
   line-height: 3;
   color: #333;
 }
-#product .inner .wrap article:last-child {
-  margin-right: 0px;
-}
 #product .inner .prev {
   position: absolute;
   top: 50%;
-  left: 100px;
+  left: 0;
 }
 #product .inner .next {
   position: absolute;
   top: 50%;
-  right: 100px;
+  right: 0;
 }
 
 #brand {

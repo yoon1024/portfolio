@@ -16,9 +16,8 @@ const btns = brand.querySelectorAll(".wrap .btns li");
 const product = document.querySelector("#product");
 const wrap = product.querySelector(".wrap");
 const article = product.querySelectorAll(".wrap article");
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
-
+const prev = product.querySelector(".prev");
+const next = product.querySelector(".next");
 
 
 
@@ -52,21 +51,47 @@ btns.forEach((el,index)=>{
     })
 })
 
+
+
 //product 슬라이드
+
+
 
 prev.addEventListener("click",(e)=>{
     e.preventDefault();
 
-    wrap.style.left = "-33.333%";
+
+
+        new Anim(wrap,{
+            prop : 'left',
+            value : "33.333%",
+            duration : 800,
+            callback :()=>{
+                wrap.style.left = "0%";
+                wrap.prepend(wrap.lastElementChild);
+            }
+        })
+
 
     
 })
 
 
+
 next.addEventListener("click",(e)=>{
     e.preventDefault();
 
-    article.style.left = "33.333%";
+    new Anim(wrap,{
+        prop : 'left',
+        value : "-33.333%",
+        duration : 800,
+        callback :()=>{
+            wrap.style.left = "0%";
+            wrap.append(wrap.firstElementChild);
+        }
+    })
+
+
 })
 
 

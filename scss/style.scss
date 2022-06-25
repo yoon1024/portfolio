@@ -361,14 +361,19 @@ a {text-decoration: none;}
 }
 
 #product{
-    width: 100%;
+    width: 100%; height: 100vh;
     padding: 100px 0px; 
     background-color: rgb(220, 229, 238);
-    position: relative;
+    position: relative; margin: auto;
+    overflow: hidden;
     .inner{
-        width: 1180px; margin: 0 auto;
+        width: 1180px; height: 100%;
+        margin: 0 auto;
         text-align: center;
         overflow: hidden;
+        position: relative;
+        
+
         h3{
             font-size: 17px;
             font-family: 'Frank Ruhl Libre';
@@ -389,14 +394,19 @@ a {text-decoration: none;}
             color: #555;
         }
         .wrap{
-            display: flex; margin-top: 50px;
+            display: flex; 
+            margin-top: 50px;
             width: 200%;
+            position: absolute; top: 50%; left: 0%; transform: translateY(-50%);
             article{
+                width: 380px;
                 margin-right: 20px;
-                width: calc(100% / 3);
+                // position: absolute;
+
                 img{
                     background-color: rgb(230,230,230);
-                    width:380px; height: 380px; object-fit: contain; border-radius: 50%;
+                    width:380px; height: 380px; object-fit: contain; 
+                    border-radius: 50%;
                     margin-bottom: 20px;
                 }
                 h3{
@@ -412,17 +422,14 @@ a {text-decoration: none;}
                     line-height: 3;
                     color: #333;
                 }
-                &:last-child{
-                    margin-right: 0px;
-                }
             }
         }
 
         .prev{
-            position: absolute; top: 50%; left: 100px;
+            position: absolute; top: 50%; left: 0;
         }
         .next{
-            position: absolute; top: 50%; right: 100px;
+            position: absolute; top: 50%; right: 0;
         }
     }
 
