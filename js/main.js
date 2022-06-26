@@ -61,11 +61,10 @@ prev.addEventListener("click",(e)=>{
     e.preventDefault();
 
 
-
         new Anim(wrap,{
             prop : 'left',
             value : "33.333%",
-            duration : 800,
+            duration : 700,
             callback :()=>{
                 wrap.style.left = "0%";
                 wrap.prepend(wrap.lastElementChild);
@@ -84,7 +83,7 @@ next.addEventListener("click",(e)=>{
     new Anim(wrap,{
         prop : 'left',
         value : "-33.333%",
-        duration : 800,
+        duration : 700,
         callback :()=>{
             wrap.style.left = "0%";
             wrap.append(wrap.firstElementChild);
