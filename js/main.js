@@ -6,7 +6,6 @@ const copy = header.querySelector(".inner .copy")
 
 
 
-
 const brand = document.querySelector("#brand");
 const panel = brand.querySelector(".panel");
 const btns = brand.querySelectorAll(".wrap .btns li");
@@ -18,7 +17,6 @@ const wrap = product.querySelector(".wrap");
 const article = product.querySelectorAll(".wrap article");
 const prev = product.querySelector(".prev");
 const next = product.querySelector(".next");
-
 
 
 
@@ -54,8 +52,6 @@ btns.forEach((el,index)=>{
 
 
 //product 슬라이드
-
-
 
 prev.addEventListener("click",(e)=>{
     e.preventDefault();
