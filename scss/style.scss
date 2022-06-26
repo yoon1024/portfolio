@@ -22,7 +22,7 @@ a {text-decoration: none;}
             }
             a{
                 img{
-                    width: 9vw; opacity: 0.8;
+                    width: 150px; opacity: 0.8;
                 }
             }
         }
@@ -204,8 +204,13 @@ a {text-decoration: none;}
                         h3{
                             font-size: 18px;
                             font-family: 'Frank Ruhl Libre';
-                            font-weight: 900;
+                            font-weight: 300;
                             color: rgb(171, 188, 207);
+                            a{
+                                font-size: 25px;
+                                font-weight: bold;
+                                color: #555;
+                            }
                         }      
                     }
                     .txt2{
@@ -217,11 +222,7 @@ a {text-decoration: none;}
                             line-height: 1.2;
                             color: #333;
                             margin-bottom: 30px;
-                            a{
-                                font-size: 30px;
-                                font-weight: bold;
-                                color: #000;
-                            }
+
                         }
                     }
                     &::after{
@@ -609,9 +610,6 @@ a {text-decoration: none;}
             .wrap{
                 a{
                     margin-left: 30px;
-                    img{
-                        width: 100px;
-                    }
                 }
             }
             .menuWeb{
@@ -635,6 +633,11 @@ a {text-decoration: none;}
                         display: flex; justify-content: center; align-items: center;
                         .pic_1 {
                             margin-right: 0px;
+                            &:hover div:nth-child(1){width: calc(100% - 40px); transition: all 0.5s;}
+                            &:hover div:nth-child(3){width: calc(100% - 50px); transition: all 0.5s; transition-delay: 1s;}
+                            img{
+                                width: 100%;
+                            }
                         }
                         .pic_2{ 
                             display: none;
@@ -665,8 +668,6 @@ a {text-decoration: none;}
         }
     
     }
-
-   
 
     #brand{
         .inner{
@@ -713,5 +714,79 @@ a {text-decoration: none;}
             width: 100%;
         }
     }
+    
+}
+
+@media screen and (max-width: 539px) {
+    #header{
+        .inner{
+            width: 100%;
+            .wrap{
+                position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+                transition: 0.5s;
+                a{
+                    img{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+        .copy{
+            display: none;
+        }
+    }
+
+    #intro{
+        .inner{  
+            .wrap{
+                article{
+                    &:nth-of-type(1){
+                        .txt2{
+                            width: 100%;
+                            margin-top: 50px;
+                            p{
+                                display: none;
+                            }
+                        }
+                    }   
+                    &:nth-of-type(3){                      
+                        .txt2{
+                            p{
+                                margin-top: 40px;
+                                &:last-of-type{
+                                    display: none;
+                                }
+                            }
+                        }  
+                    }
+                }
+            }
+        }    
+    }
+
+
+    #comments{
+        .inner{
+            width: 100%; 
+            .wrap{
+                padding: 20px;
+                article{
+                    width: 100%;
+                    margin-top: 20px;    
+                }
+
+    
+        }
+    }
+}
+
+
+    #footer{
+           padding: 100px 20px;
+        .inner{
+            width: 100%;
+        }
+    }
+
     
 }

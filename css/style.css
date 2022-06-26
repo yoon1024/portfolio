@@ -43,7 +43,7 @@ a {
   opacity: 0;
 }
 #header .inner .wrap a img {
-  width: 9vw;
+  width: 150px;
   opacity: 0.8;
 }
 #header .inner .menuWeb #gnb {
@@ -228,8 +228,13 @@ a {
 #intro .inner .wrap article:nth-of-type(1) .txt1 h3 {
   font-size: 18px;
   font-family: "Frank Ruhl Libre";
-  font-weight: 900;
+  font-weight: 300;
   color: rgb(171, 188, 207);
+}
+#intro .inner .wrap article:nth-of-type(1) .txt1 h3 a {
+  font-size: 25px;
+  font-weight: bold;
+  color: #555;
 }
 #intro .inner .wrap article:nth-of-type(1) .txt2 {
   width: 500px;
@@ -242,11 +247,6 @@ a {
   line-height: 1.2;
   color: #333;
   margin-bottom: 30px;
-}
-#intro .inner .wrap article:nth-of-type(1) .txt2 p a {
-  font-size: 30px;
-  font-weight: bold;
-  color: #000;
 }
 #intro .inner .wrap article:nth-of-type(1)::after {
   content: "";
@@ -734,9 +734,6 @@ a {
   #header .inner .wrap a {
     margin-left: 30px;
   }
-  #header .inner .wrap a img {
-    width: 100px;
-  }
   #header .inner .menuWeb {
     display: none;
   }
@@ -758,6 +755,18 @@ a {
   }
   #intro .inner .wrap article:nth-of-type(2) .pic_1 {
     margin-right: 0px;
+  }
+  #intro .inner .wrap article:nth-of-type(2) .pic_1:hover div:nth-child(1) {
+    width: calc(100% - 40px);
+    transition: all 0.5s;
+  }
+  #intro .inner .wrap article:nth-of-type(2) .pic_1:hover div:nth-child(3) {
+    width: calc(100% - 50px);
+    transition: all 0.5s;
+    transition-delay: 1s;
+  }
+  #intro .inner .wrap article:nth-of-type(2) .pic_1 img {
+    width: 100%;
   }
   #intro .inner .wrap article:nth-of-type(2) .pic_2 {
     display: none;
@@ -818,6 +827,53 @@ a {
   }
   #comments .inner .wrap article:nth-of-type(2n) {
     margin-right: 0px;
+  }
+  #footer {
+    padding: 100px 20px;
+  }
+  #footer .inner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 539px) {
+  #header .inner {
+    width: 100%;
+  }
+  #header .inner .wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+  }
+  #header .inner .wrap a img {
+    width: 200px;
+  }
+  #header .copy {
+    display: none;
+  }
+  #intro .inner .wrap article:nth-of-type(1) .txt2 {
+    width: 100%;
+    margin-top: 50px;
+  }
+  #intro .inner .wrap article:nth-of-type(1) .txt2 p {
+    display: none;
+  }
+  #intro .inner .wrap article:nth-of-type(3) .txt2 p {
+    margin-top: 40px;
+  }
+  #intro .inner .wrap article:nth-of-type(3) .txt2 p:last-of-type {
+    display: none;
+  }
+  #comments .inner {
+    width: 100%;
+  }
+  #comments .inner .wrap {
+    padding: 20px;
+  }
+  #comments .inner .wrap article {
+    width: 100%;
+    margin-top: 20px;
   }
   #footer {
     padding: 100px 20px;
