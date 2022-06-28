@@ -211,6 +211,9 @@ a {text-decoration: none;}
                         display: flex;
                         .pic{
                             width: 650px;
+                            img{
+                                width: 500px; height: 350px;
+                            }
                         } 
                         .text{
                             width: 500px; text-align: left;
@@ -299,83 +302,150 @@ a {text-decoration: none;}
 
                 }
             }
+            
         }
 
     }
 
 }
 
-#product{
-    width: 100%; 
-    height: 100vh;
-    padding: 100px 0px; 
-    background-color: rgb(220, 229, 238);
-    position: relative; 
-    margin: auto;
+#intro2{
+    width: 100%; padding: 150px 0px;
+    background: url(../img/배경.png);
     .inner{
-        width: 1180px; height: 100%;
-        margin: 0 auto;
+        width: 1180px; margin: 0 auto;
         text-align: center;
-        overflow: hidden;
-        position: relative;
-        h3{
-            font-size: 17px;
-            font-family: 'Frank Ruhl Libre';
-            font-weight: 900;
+
+        .logo{
+            img{
+                width: 50px;
+                filter: brightness(60%);
+            }
+        }
+        >h2{
+            font-size: 40px;
+            font-family:'Tajawal';
+            font-weight: 200;
             line-height: 1;
             color: #555;
         }
-        h2{
-            font-size: 40px;
-            font-family: 'Frank Ruhl Libre';
-            font-weight: 900;
-            color: #333;
-        }
-        p{
-            font-size: 20px;
-            font-family: 'Karla';
-            line-height: 4;
+        >h3{
+            font-size: 15px;
+            font-family:'Gowun Dodum';
+            font-weight: 200;
+            line-height: 1;
             color: #555;
+            margin-bottom: 100px;
         }
-        .wrap{
-            margin-top: 50px;
-            width: 200%;
-            height: 380px;
-            position: absolute; top: 50%; left: 0; transform: translateY(-50%);
-            article{
-                width: calc(100% / 6);
-                float: left;
-                img{
-                    background-color: rgb(230,230,230);
-                    width:380px; height: 380px; object-fit: contain; 
-                    border-radius: 50%;
-                    margin-bottom: 20px;
-                }
-                h3{
-                    font-size: 20px;
-                    font-family: 'Frank Ruhl Libre';
-                    font-weight: 900;
-                    color: #555;
 
+        .slide{
+            .wrap1{
+                article{
+                    float: left;
+                    &:nth-of-type(1){
+                        width: 1180px;
+                        height: 350px;
+                        display: flex;
+                        .pic{
+                            width: 650px;
+                            img{
+                                width: 500px; height: 350px;
+                            }
+                        } 
+                        .text{
+                            width: 500px; text-align: left;
+                            >h2{
+                                width: 300px;
+                                font-size: 40px;
+                                font-family:'Gowun Dodum';
+                                font-weight: bold;
+                                line-height: 1;
+                                color: #555;
+                                border-bottom: 2px solid rgb(54, 95, 54) ;
+                                padding-bottom: 10px;
+                            }
+                            >p{
+                                font-size: 18px;
+                                font-family:'karla';
+                                font-weight: bold;
+                                line-height: 1.4;
+                                color: #555;
+                                &:nth-of-type(2){
+                                    font-size: 14px;
+                                    font-family:'Gowun Dodum';
+                                    font-weight: 300;
+                                    line-height: 1.8;
+                                    color: #555;
+                                }
+                            }
+                            >h3{
+                                font-size: 20px;
+                                font-family:'Gowun Dodum';
+                                color: #555;
+                                margin-top: 50px;
+                                margin-bottom: 20px;
+                                
+                            }
+                            
+
+                        }
+                    }
+
+                    &:nth-of-type(2),&:nth-of-type(3){
+                        width: 580px; height: 170px;
+                        margin-right: 20px;
+                        background-color: rgba(0,0,0,0.2);
+                        display: flex; align-items: center;
+                        .pic{
+                            width: 290px;
+                            img{
+                                height: 150px;
+                            }
+                        }
+                        .text{
+                            text-align: left;
+                            h3{
+                                width: 120px;
+                                font-size: 18px;
+                                font-family:'Gowun Dodum';
+                                line-height: 1.6;
+                                color: #444;
+                                border-bottom: 1px solid #333;
+                            }
+                            p{
+                                font-size: 15px;
+                                font-family:'Gowun Dodum';
+                                font-weight: 300;
+                                line-height: 3;
+                                color: #555;
+                            }
+                            a{
+                                border: 1px solid #555;
+                                padding: 5px 40px;
+                                font-size: 15px;
+                                font-family:'Gowun Dodum';
+                                font-weight: 300;
+                                line-height: 1.2;
+                                color: #555;
+                            }
+                        }
+                    }
+                    &:nth-of-type(3){
+                        margin-right: 0px;
+                    }
                 }
-                p{
-                    font-size: 20px;
-                    font-family: 'Karla';
-                    line-height: 3;
-                    color: #333;
+                &::after{
+                    content: ''; display: block; clear: both;
+
                 }
             }
+            
         }
 
-        .prev{
-            position: absolute; top: 50%; left: 0;
-        }
-        .next{
-            position: absolute; top: 50%; right: 0;
-        }
     }
 
 }
+
 
 #banner{
     width: 100%; height: 400px;

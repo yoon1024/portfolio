@@ -2178,6 +2178,10 @@ a {
 #intro .inner .slide .wrap1 article:nth-of-type(1) .pic {
   width: 650px;
 }
+#intro .inner .slide .wrap1 article:nth-of-type(1) .pic img {
+  width: 500px;
+  height: 350px;
+}
 #intro .inner .slide .wrap1 article:nth-of-type(1) .text {
   width: 500px;
   text-align: left;
@@ -2263,83 +2267,133 @@ a {
   clear: both;
 }
 
-#product {
+#intro2 {
   width: 100%;
-  height: 100vh;
-  padding: 100px 0px;
-  background-color: rgb(220, 229, 238);
-  position: relative;
-  margin: auto;
+  padding: 150px 0px;
+  background: url(../img/배경.png);
 }
-#product .inner {
+#intro2 .inner {
   width: 1180px;
-  height: 100%;
   margin: 0 auto;
   text-align: center;
-  overflow: hidden;
-  position: relative;
 }
-#product .inner h3 {
-  font-size: 17px;
-  font-family: "Frank Ruhl Libre";
-  font-weight: 900;
+#intro2 .inner .logo img {
+  width: 50px;
+  filter: brightness(60%);
+}
+#intro2 .inner > h2 {
+  font-size: 40px;
+  font-family: "Tajawal";
+  font-weight: 200;
   line-height: 1;
   color: #555;
 }
-#product .inner h2 {
-  font-size: 40px;
-  font-family: "Frank Ruhl Libre";
-  font-weight: 900;
-  color: #333;
-}
-#product .inner p {
-  font-size: 20px;
-  font-family: "Karla";
-  line-height: 4;
+#intro2 .inner > h3 {
+  font-size: 15px;
+  font-family: "Gowun Dodum";
+  font-weight: 200;
+  line-height: 1;
   color: #555;
+  margin-bottom: 100px;
 }
-#product .inner .wrap {
-  margin-top: 50px;
-  width: 200%;
-  height: 380px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-#product .inner .wrap article {
-  width: 16.6666666667%;
+#intro2 .inner .slide .wrap1 article {
   float: left;
 }
-#product .inner .wrap article img {
-  background-color: rgb(230, 230, 230);
-  width: 380px;
-  height: 380px;
-  object-fit: contain;
-  border-radius: 50%;
-  margin-bottom: 20px;
+#intro2 .inner .slide .wrap1 article:nth-of-type(1) {
+  width: 1180px;
+  height: 350px;
+  display: flex;
 }
-#product .inner .wrap article h3 {
-  font-size: 20px;
-  font-family: "Frank Ruhl Libre";
-  font-weight: 900;
+#intro2 .inner .slide .wrap1 article:nth-of-type(1) .pic {
+  width: 650px;
+}
+#intro2 .inner .slide .wrap1 article:nth-of-type(1) .pic img {
+  width: 500px;
+  height: 350px;
+}
+#intro2 .inner .slide .wrap1 article:nth-of-type(1) .text {
+  width: 500px;
+  text-align: left;
+}
+#intro2 .inner .slide .wrap1 article:nth-of-type(1) .text > h2 {
+  width: 300px;
+  font-size: 40px;
+  font-family: "Gowun Dodum";
+  font-weight: bold;
+  line-height: 1;
+  color: #555;
+  border-bottom: 2px solid rgb(54, 95, 54);
+  padding-bottom: 10px;
+}
+#intro2 .inner .slide .wrap1 article:nth-of-type(1) .text > p {
+  font-size: 18px;
+  font-family: "karla";
+  font-weight: bold;
+  line-height: 1.4;
   color: #555;
 }
-#product .inner .wrap article p {
+#intro2 .inner .slide .wrap1 article:nth-of-type(1) .text > p:nth-of-type(2) {
+  font-size: 14px;
+  font-family: "Gowun Dodum";
+  font-weight: 300;
+  line-height: 1.8;
+  color: #555;
+}
+#intro2 .inner .slide .wrap1 article:nth-of-type(1) .text > h3 {
   font-size: 20px;
-  font-family: "Karla";
+  font-family: "Gowun Dodum";
+  color: #555;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+#intro2 .inner .slide .wrap1 article:nth-of-type(2), #intro2 .inner .slide .wrap1 article:nth-of-type(3) {
+  width: 580px;
+  height: 170px;
+  margin-right: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+#intro2 .inner .slide .wrap1 article:nth-of-type(2) .pic, #intro2 .inner .slide .wrap1 article:nth-of-type(3) .pic {
+  width: 290px;
+}
+#intro2 .inner .slide .wrap1 article:nth-of-type(2) .pic img, #intro2 .inner .slide .wrap1 article:nth-of-type(3) .pic img {
+  height: 150px;
+}
+#intro2 .inner .slide .wrap1 article:nth-of-type(2) .text, #intro2 .inner .slide .wrap1 article:nth-of-type(3) .text {
+  text-align: left;
+}
+#intro2 .inner .slide .wrap1 article:nth-of-type(2) .text h3, #intro2 .inner .slide .wrap1 article:nth-of-type(3) .text h3 {
+  width: 120px;
+  font-size: 18px;
+  font-family: "Gowun Dodum";
+  line-height: 1.6;
+  color: #444;
+  border-bottom: 1px solid #333;
+}
+#intro2 .inner .slide .wrap1 article:nth-of-type(2) .text p, #intro2 .inner .slide .wrap1 article:nth-of-type(3) .text p {
+  font-size: 15px;
+  font-family: "Gowun Dodum";
+  font-weight: 300;
   line-height: 3;
-  color: #333;
+  color: #555;
 }
-#product .inner .prev {
-  position: absolute;
-  top: 50%;
-  left: 0;
+#intro2 .inner .slide .wrap1 article:nth-of-type(2) .text a, #intro2 .inner .slide .wrap1 article:nth-of-type(3) .text a {
+  border: 1px solid #555;
+  padding: 5px 40px;
+  font-size: 15px;
+  font-family: "Gowun Dodum";
+  font-weight: 300;
+  line-height: 1.2;
+  color: #555;
 }
-#product .inner .next {
-  position: absolute;
-  top: 50%;
-  right: 0;
+#intro2 .inner .slide .wrap1 article:nth-of-type(3) {
+  margin-right: 0px;
+}
+#intro2 .inner .slide .wrap1::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 #banner {
