@@ -2656,49 +2656,37 @@ a {
 
 #footer {
   width: 100%;
-  padding: 100px 0;
-  background: rgb(220, 229, 238);
+  height: 600px;
 }
 #footer .inner {
   width: 1180px;
-  margin: 0 auto;
+  height: 600px;
 }
-#footer .inner::after {
-  content: "";
-  display: block;
-  clear: both;
+#footer .inner .footer_logo {
+  float: left;
+  width: 280px;
+  margin-right: 20px;
+  text-align: center;
 }
-#footer .inner h1 {
-  font: bold 24px/1 "arial";
-  color: #666;
+#footer .inner .wrap article {
+  width: 280px;
+  height: 500px;
+  margin-right: 20px;
   float: left;
 }
-#footer .inner ul {
-  float: right;
+#footer .inner .wrap article:last-of-type {
+  margin-right: 0px;
 }
-#footer .inner ul li {
-  float: left;
-  margin-left: 20px;
+#footer .inner .wrap article:last-of-type ul li {
+  width: 280px;
+  height: 50px;
+  background: #555;
+  border-bottom: 1px solid #999;
+  padding-left: 20px;
 }
-#footer .inner ul li a {
-  font: bold 14px/1 "arial";
-  color: #666;
-}
-#footer .inner address {
-  width: 100%;
-  font: 14px/1.3 "arial";
-  color: #777;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  float: left;
-  border-top: 1px solid #888;
-  padding-top: 20px;
-}
-#footer .inner p {
-  width: 100%;
-  font: 12px/1 "arial";
-  color: #777;
-  float: left;
+#footer .inner .wrap article:last-of-type ul li a {
+  line-height: 50px;
+  color: #999;
 }
 
 @media screen and (max-width: 1179px) {
