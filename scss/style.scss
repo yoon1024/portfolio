@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;900&family=Karla:wght@200&display=swap');
+@import "sub_layout.scss";
+@import "brandstory.scss";
+@import "event.scss";
+@import "product.scss";
+@import "service.scss";
+@import "store.scss";
+
 
 *{margin: 0px; padding: 0px; box-sizing: border-box;}
 ul,ol,li{list-style: none;}
@@ -8,7 +15,8 @@ a {text-decoration: none;}
 
 // header 영역
 #header{
-    width: 100%; height: 100vh; 
+    width: 100%; 
+    height: 100vh; 
     position: relative; 
     background-color: #000;
     video{
@@ -427,7 +435,7 @@ a {text-decoration: none;}
             margin-top: 50px;
             width: 200%;
             height: 380px;
-            position: absolute; top: 50%; left: 0%; transform: translateY(-50%);
+            position: absolute; top: 50%; left: 0; transform: translateY(-50%);
             article{
                 width: calc(100% / 6);
                 float: left;

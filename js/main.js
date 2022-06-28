@@ -50,6 +50,7 @@ btns.forEach((el,index)=>{
 })
 
 
+wrap.style.left = "-33.333%"
 
 //product 슬라이드
 
@@ -59,10 +60,10 @@ prev.addEventListener("click",(e)=>{
 
         new Anim(wrap,{
             prop : 'left',
-            value : "33.333%",
+            value : "0%",
             duration : 700,
             callback :()=>{
-                wrap.style.left = "0%";
+                wrap.style.left = "-33.333%";
                 wrap.prepend(wrap.lastElementChild);
             }
         })
@@ -78,10 +79,10 @@ next.addEventListener("click",(e)=>{
 
     new Anim(wrap,{
         prop : 'left',
-        value : "-33.333%",
+        value : "-66.666%",
         duration : 700,
         callback :()=>{
-            wrap.style.left = "0%";
+            wrap.style.left = "-33.333%";
             wrap.append(wrap.firstElementChild);
         }
     })
