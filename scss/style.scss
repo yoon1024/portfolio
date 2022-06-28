@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;900&family=Karla:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;500&display=swap');
 @import "sub_layout.scss";
 @import "brandstory.scss";
 @import "event.scss";
@@ -191,6 +191,71 @@ a {text-decoration: none;}
         }
     }
 }
+
+// #brand{
+//     width: 100%; padding: 150px 0px;
+//     .inner{
+//         width: 1180px; margin: 0 auto; 
+//         text-align: center;
+//         h3{
+//             font-size: 20px;
+//             font-family: 'Frank Ruhl Libre';
+//             font-weight: 900;
+//             line-height: 1;
+//             color: #777;
+//         }
+//         h2{
+//             font-size: 40px;
+//             font-family: 'Frank Ruhl Libre';
+//             font-weight: 900;
+//             color: #333;
+//             margin-bottom: 20px;
+//         }
+//         p{
+//             font-size: 15px;
+//             font-family: 'Karla';
+//             line-height: 1.2;
+//             color: #000;
+//         }
+//         .wrap{ 
+//             position: relative;
+//             width: 60vw; height: 65vh; margin: 100px auto 0px; 
+//             overflow: hidden;
+//             .panel{
+//                 width: 300%; height: 100%;
+//                 transition: 1s;
+//                 li{ 
+//                     width: calc( 100% / 3 ); height: 100%;
+//                     float: left;
+
+//                     &:nth-of-type(1){background: url(../img/brand_story1.jpg);background-size: cover;}
+//                     &:nth-of-type(2){background: url(../img/brand_story2.jpg);background-size: cover;}
+//                     &:nth-of-type(3){background: url(../img/brand_story3.png);background-size: cover;}
+//                 }
+//             }
+//             .btns{
+//                 position: absolute; bottom: 15px; right: 20px;
+//                 li{
+//                     float: left; margin: 20px;
+//                     a{
+//                         display: block;
+//                         width: 20px; height: 20px;
+//                         border-radius: 50%;
+//                         background-color: #fff;
+//                         opacity: 0.7;
+//                     }
+//                     &.on a{
+//                         background-color: #000;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+#brand
+
+
 
 #intro{
     width: 100%;
@@ -471,66 +536,7 @@ a {text-decoration: none;}
 
 }
 
-#brand{
-    width: 100%; padding: 150px 0px;
-    .inner{
-        width: 1180px; margin: 0 auto; 
-        text-align: center;
-        h3{
-            font-size: 20px;
-            font-family: 'Frank Ruhl Libre';
-            font-weight: 900;
-            line-height: 1;
-            color: #777;
-        }
-        h2{
-            font-size: 40px;
-            font-family: 'Frank Ruhl Libre';
-            font-weight: 900;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        p{
-            font-size: 15px;
-            font-family: 'Karla';
-            line-height: 1.2;
-            color: #000;
-        }
-        .wrap{ 
-            position: relative;
-            width: 60vw; height: 65vh; margin: 100px auto 0px; 
-            overflow: hidden;
-            .panel{
-                width: 300%; height: 100%;
-                transition: 1s;
-                li{ 
-                    width: calc( 100% / 3 ); height: 100%;
-                    float: left;
 
-                    &:nth-of-type(1){background: url(../img/brand_story1.jpg);background-size: cover;}
-                    &:nth-of-type(2){background: url(../img/brand_story2.jpg);background-size: cover;}
-                    &:nth-of-type(3){background: url(../img/brand_story3.png);background-size: cover;}
-                }
-            }
-            .btns{
-                position: absolute; bottom: 15px; right: 20px;
-                li{
-                    float: left; margin: 20px;
-                    a{
-                        display: block;
-                        width: 20px; height: 20px;
-                        border-radius: 50%;
-                        background-color: #fff;
-                        opacity: 0.7;
-                    }
-                    &.on a{
-                        background-color: #000;
-                    }
-                }
-            }
-        }
-    }
-}
 
 #comments{
     width: 100%; margin: 150px 0px;
