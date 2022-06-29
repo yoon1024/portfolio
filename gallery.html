@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sub_page</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://kit.fontawesome.com/16312fa746.js" crossorigin="anonymous"></script>
     <script defer src="js/main.js"></script>
-    <script defer src="js/anime.js"></script>
-    <script defer src="js/scroll.js"></script>
+    <script defer src="js/flickr.js"></script>
     <script src="https://kit.fontawesome.com/31e84a9307.js" crossorigin="anonymous"></script>
 
 </head>
@@ -28,7 +29,7 @@
                     <!-- 회사 소개, 브랜드 스토리, 함께하는 사람들(ex.조직도) -->
                     <li><a href="service.html">SERVICE</a></li>
                     <!-- 고객센터 or q&a -->
-                    <li><a href="event.html">EVENT</a></li>
+                    <li><a href="gallery.html">EVENT</a></li>
                     <!-- 유튜브, 이벤트 등등 -->
                     <li><a href="store.html">STORE</a></li>
                     <!-- 지역별 스토어 위치 -->
@@ -56,77 +57,50 @@
                 <ul id="gnbMo">
                     <li><a href="product.html">PRODUCT</a></li>
                     <li><a href="brandstory.html">BRAND STORY</a></li>
-                    <li><a href="service.html">SERVICE</a></li>
-                    <li><a href="event.html">EVENT</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
                     <li><a href="store.html">STORE</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="visual_sub">
+
+    <section class="content gallery">
+        <div class="sub_visual"></div>
         <div class="inner">
-            <div class="wrap">
-                <img src="img/visual(yellow).png" alt="">
+            <h1>GALLERY <span>갤러리</span></h1>
+
+            <div id="gallery">
+                <article id="searchBox">
+                    <input type="text" id="search" placeholder="검색어 입력">
+                    <button class="btnSearch">Search</button>
+                </article>
+                <div id="wrap">
+                    <img src="img/loading.gif" class="loading" alt="">
+                    <ul id="list">
+                        <!-- <li class="item">
+                            <div>
+                                <a href="큰이미지주소">
+                                    <img src="썸네일" alt="">
+                                </a>
+                                <p>이미지제목</p>
+                                <span>버디아이콘 <strong>주인이름</strong></span>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- <aside>
+                    <img src="큰이미지주소" alt="">
+                    <span>close</span>
+                </aside> -->
             </div>
-        </div>
-    </section>
-
-    <section id="product">
-        <div class="inner">
-            <h3>Lorem, ipsum dolor</h3>
-            <h2>Aesop Product</h2>
-            <p>#lorem #lorem</p>
-            <div class="wrap">
-                <article>
-                    <img src="img/product1.png" alt="Hand Balm">
-                    <h3>Hand Balm</h3>
-                    <p>$30.99</p>
-                </article>
-                <article>
-                    <img src="img/product2.png" alt="Hwyl Eau de Parfum">
-                    <h3>Hwyl Eau de Parfum</h3>
-                    <p>$144.99</p>
-                </article>
-                <article>
-                    <img src="img/product3.png" alt="Geranium Leaf Body Scrub">
-                    <h3>Geranium Leaf Body Scrub</h3>
-                    <p>$42.99</p>
-                </article>
-                <article>
-                    <img src="img/product4(Camellia Nut Facial Hydrating Cream).png" alt="Hand Balm">
-                    <h3>Camellia Nut Facial Hydrating Cream</h3>
-                    <p>$129.99</p>
-                </article>
-                <article>
-                    <img src="img/product5(Exalted Eye Serum, $119.99).png" alt="Hand Balm">
-                    <h3>Exalted Eye Serum</h3>
-                    <p>$1190.99</p>
-                </article>
-                <article>
-                    <img src="img/product6(Protective Lip Balm,$20.99).png" alt="Hand Balm">
-                    <h3>Protective Lip Balm</h3>
-                    <p>$20.99</p>
-                </article>
-
-
-            </div>
-
-            <a href="#" class="prev">
-                <img src="img/btnPrev.png" alt="">
-            </a>
-
-            <a href="#" class="next">
-                <img src="img/btnNext.png" alt="">
-            </a>
-
         </div>
     </section>
     
         
     <footer id="footer">
         <div class="inner">
-            <h1>Aesop</h1>
             <ul>
                 <li><a href="#">Policy</a></li>
                 <li><a href="#">Terms</a></li>
@@ -134,11 +108,39 @@
                 <li><a href="#">Contact us</a></li>
             </ul>
 
-            <address>
-                address : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, similique. <br/>
-                TEL : +82-2-2100-2114 FAX : +82-2-2100-7999
-            </address>
-            <p>Copyright &copy; 2022 Aesop ALL Right reserved.</p>
+            <div class="wrap">
+                <div class="pic">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <article>
+                    <li>
+                        <h4>Company</h4>
+                        <h4>CEO</h4>
+                        <h4>Online marketing Number</h4>
+                        <h4>Corporate registration number</h4>
+                        <h4>Adresse</h4>
+                    </li>
+                </article>
+                <article>
+                    <li>
+                        <p>&copy;Aesope</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>2014-lorem-02300</p>
+                        <p>220-88-56014</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </li>
+                </article>
+                <article></article>
+                <article>
+                    <h4>Service</h4>
+                    <h3>080-805-5555</h3>
+                    <p>09:00 - 17:00</p>
+                    <h4>email</h4>
+                    <h3>help@osulloc.com</h3>
+                    <p>평일 09:00 - 17:00</p>
+                </article>
+            </div>
+
         </div>
     </footer>
 
